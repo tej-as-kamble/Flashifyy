@@ -12,7 +12,7 @@ const notifyA=(val)=> toast.error(val)
 
 useEffect(()=>{
   if(url){
-    fetch("https://instagrambackend-ypjm.onrender.com/createpost",{
+    fetch("https://flashify-5lv3.onrender.com/createpost",{
   method:"post",
   headers:{
     "Content-Type":"application/json",

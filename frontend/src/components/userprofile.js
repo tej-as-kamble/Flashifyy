@@ -12,7 +12,7 @@ const [post,setpost]=useState([])
 const {userid}=useParams()
 const [isfollow,setfollow]=useState(false)
 const followuser=(userid)=>{
-  fetch('https://instagrambackend-ypjm.onrender.com/follow',{
+  fetch('https://flashify-5lv3.onrender.com/follow',{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -24,7 +24,7 @@ const followuser=(userid)=>{
   }).then((result)=>{return result.json()}).then((val)=>{notifyB("Followed");setfollow(true)}).catch((err)=>{})
 }
 const unfollowuser=(userid)=>{
-  fetch('https://instagrambackend-ypjm.onrender.com/unfollow',{
+  fetch('https://flashify-5lv3.onrender.com/unfollow',{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -38,7 +38,7 @@ const unfollowuser=(userid)=>{
 useEffect(() => {
   const fetchData = async () => {
     try {
-      const result = await fetch(`https://instagrambackend-ypjm.onrender.com/user/${userid}`);
+      const result = await fetch(`https://flashify-5lv3.onrender.com/user/${userid}`);
       const val = await result.json();
       setpost(val.post);
       setuser(val.user);

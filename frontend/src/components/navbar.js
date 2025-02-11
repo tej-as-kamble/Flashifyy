@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../image/instagram.png"
+import logo from "../image/background.png"
 import './navbar.css'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'

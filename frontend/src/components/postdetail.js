@@ -8,7 +8,7 @@ const Postdetail = ({item,toogledetail}) => {
     const notifyB=(val)=> toast.success(val)
     const removepost=(postid)=>{
        if(window.confirm("Are you sure want to delete this post?")){
-        fetch(`https://instagrambackend-ypjm.onrender.com/deletepost/${postid}`,{
+        fetch(`https://flashify-5lv3.onrender.com/deletepost/${postid}`,{
             method:"delete",
             headers:{
                 "Authorization":"Bearer "+localStorage.getItem('jwt')

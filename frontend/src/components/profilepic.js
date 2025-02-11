@@ -32,7 +32,7 @@ function postdetail(){
       },[image])
 
       const postpic=()=>{
-              fetch("https://instagrambackend-ypjm.onrender.com/uploadprofilepic",{
+              fetch("https://flashify-5lv3.onrender.com/uploadprofilepic",{
             method:"put",
             headers:{
               "Content-Type":"application/json",
