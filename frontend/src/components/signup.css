@@ -1,5 +1,5 @@
 .signup{
-    background-color: rgb(146, 150, 160);
+    background-image: url('../image/background.jpg');
     background-size: cover;
     flex:1;
     display: flex;

@@ -2,7 +2,7 @@ import React from 'react'
 import './signin.css'
 import { useState,useContext } from 'react'
 import Logincontext from '../context/logincontext.js'
-import logo from "../image/background.png"
+import logo from "../image/instagram.png"
 import {Link,useNavigate} from "react-router-dom"
 import {toast } from 'react-toastify';
 const Signin = () => {
@@ -18,7 +18,7 @@ const Signin = () => {
         notifyA("Invalid Email")
         return;
     }
-      fetch("https://flashify-5lv3.onrender.com/signin",{
+      fetch("https://instagrambackend-ypjm.onrender.com/signin",{
         method:"post",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({

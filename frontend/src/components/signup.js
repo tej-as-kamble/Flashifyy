@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../image/background.png"
+import logo from "../image/instagram.png"
 import './signup.css'
 import { useEffect,useState } from 'react'
 import {Link,useNavigate} from "react-router-dom"
@@ -23,7 +23,7 @@ else if(!passwordregex.test(password)){
   notifyA("Password must contain atleast 8 characters,including atleast 1 numeric value, 1 lowercase(a-z),1 uppercase(A-Z) and 1 special character")
 return
 }
-  fetch("https://flashify-5lv3.onrender.com/signup",{
+  fetch("https://instagrambackend-ypjm.onrender.com/signup",{
     method:"post",
     headers:{"Content-Type":"application/json"},
     body:JSON.stringify({

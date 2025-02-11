@@ -20,7 +20,7 @@ const navigate=useNavigate();
     }
 
     // fetch post 
-    fetch("https://flashify-5lv3.onrender.com/myfollowingpost",{
+    fetch("https://instagrambackend-ypjm.onrender.com/myfollowingpost",{
       headers:{
         "Authorization":"Bearer "+localStorage.getItem('jwt')
       }
@@ -46,7 +46,7 @@ const tooglecomment=(post)=>{
   }
 }
 const likepost=(id)=>{
-  fetch('https://flashify-5lv3.onrender.com/like',{
+  fetch('https://instagrambackend-ypjm.onrender.com/like',{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -72,7 +72,7 @@ const likepost=(id)=>{
   })
 }
 const unlikepost=(id)=>{
-  fetch('https://flashify-5lv3.onrender.com/unlike',{
+  fetch('https://instagrambackend-ypjm.onrender.com/unlike',{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -100,7 +100,7 @@ const unlikepost=(id)=>{
 }
 
 const makecomment=(val,id)=>{
-  fetch('https://flashify-5lv3.onrender.com/comment',{
+  fetch('https://instagrambackend-ypjm.onrender.com/comment',{
     method:"put",
     headers:{
       "Content-Type":"application/json",
